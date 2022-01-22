@@ -1,0 +1,100 @@
+DAY-1(TASK):
+
+QUESTION:
+2.Write a blog on Difference between HTTP1.1 vs HTTP2.
+
+ANSWER:
+HTTP stands for hypertext transfer protocol. 
+It is the basis for almost all web applications. 
+HTTP is the method computers and servers use to request and send information.
+
+The first usable version of HTTP was created in 1997. This first version of HTTP was called HTTP 1.1 because it went through several stages of development. This version is still in use on the web. 
+In 2015, a new version of HTTP called HTTP 2 was created.
+
+HTTP 1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it.But HTTP 2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource.
+
+HTTP 2 is a binary protocol. This is potentially much more compressed than HTTP/1.1 and this fewer bytes on-the-wire. This means less bandwidth usage and faster load times - benefits which are amplified with many smaller requests.
+
+HTTP 2 is multiplexed. This means many requests can leverage an existing connection in parallel. Coming from HTTP/1.1’s one connection per request this is a huge leap in efficiency.
+
+HTTP 2 requests can be pushed. This means requests can be pre-sent (and be ready before they've even been requested). While that creates some interesting questions (mostly revolving around caches) it's a potentially exciting area of development.
+
+HTTP 2 must be encrypted. At least for browsers. This is a valuable best practice and browser vendors flex their muscle where it benefits users.
+
+In HTTP 2, developers have hands-on, detailed control over prioritization. This allows them to maximize perceived and actual page load speed to a degree that was not possible in HTTP 1.1.
+
+HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets. This eliminates a few bytes from every HTTP packet. To speed up web performance, both HTTP/1.1 and HTTP/2 compress HTTP messages to make them smaller.
+
+
+
+QUESTION:
+3.Write a blog about objects and its internal representation in Javascript.
+
+ANSWER:
+Objects and its internal representation in Javascript:
+
+Object:
+In JavaScript, an object is a standalone entity, with properties and type. 
+For example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. 
+The same way, JavaScript objects can have properties, which define their characteristics.
+
+Creating Objects in JavaScript:
+By object literal
+By creating instance of Object directly (using new keyword)
+
+JavaScript object is a collection of named values having state and behavior (properties and method).
+For example: Person, car, pen, bike, Personal Computer , Washing Machine etc.
+In case of cars, all cars have the same properties, but the property values differ from car to car. All cars have the same methods, but the methods are performed at different times.
+
+For example car and list out its properties:
+
+Make: Mercedes 
+Model: C-Class
+Color: White
+Fuel: Diesel
+Weight: 850kg
+Mileage: 8Kmpl
+Rating: 4.5
+
+1)Objects:
+Objects are variables too. But objects can contain many values.
+
+The following code assigns a simple value (Mercedes) to a variable named car:
+var car = "Mercedes";
+
+The following code assigns many values (Mercedes, C-class, White and soo on) to a variable named Car:
+var car = {Make: “Mercedes”, Model: “C-Class”, Color: “White”, Fuel: Diesel, Weight: “850kg”, Mileage: “8Kmpl”, Rating: 4.5};
+The values are written as name:value pairs (name and value separated by a colon).
+
+Syntax:
+var <object-name> = {key1: value1, key2: value2,... keyN: valueN};
+So, conclusion and definition for JS objects is “JavaScript objects are containers for named values”.
+
+
+2)Object Properties:
+Properties can usually be changed, added, and deleted, but some are read only.
+The name:values pairs (in JavaScript objects) are called properties.
+
+var car = {Make: “Mercedes”, Model: “C-Class”, Color: “White”, Fuel: Diesel, Weight: “850kg”,Mileage: “8Kmpl”, Rating: 4.5};
+The object properties can be different primitive values, other objects and functions.
+
+The syntax for adding a property to an object is :
+ObjectName.ObjectProperty = propertyValue;
+
+The syntax for deleting a property from an object is:
+delete ObjectName.ObjectProperty;
+
+The syntax to access a property from an object is:
+objectName.property        ex: Car.Make
+objectName["property”]     ex: Car["Make"]
+
+Properties are the values associated with a JavaScript object.
+
+
+3)Object Methods:
+An object method is an object property containing a function definition.
+
+function(){return ignition.on}
+and so similar is to stop/brake/headlights on & off, etc.
+
+Methods are actions that can be performed on objects.
